@@ -1,4 +1,4 @@
-# Redicon CMS Articles
+# Redicon CMS Gallery
 Module for cmsr allowing for article management
 ## Getting Started
 Install CMS Redicon first
