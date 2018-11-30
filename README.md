@@ -1,5 +1,5 @@
 # Redicon CMS Gallery
-Module for cmsr allowing for article management
+Module for cmsr allowing for galleries management
 ## Getting Started
 Install CMS Redicon first
 ### Installing
