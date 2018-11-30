@@ -1,6 +1,6 @@
 <?php
 
-namespace Redicon\CMS_Articles;
+namespace Redicon\CMS_Gallery;
 use Artisan;
 use Illuminate\Support\ServiceProvider;
 
@@ -17,7 +17,7 @@ class CmsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         //tłumaczenia
-        $this->loadTranslationsFrom(__DIR__.'/lang', 'cms_articles_lang');
+        $this->loadTranslationsFrom(__DIR__.'/lang', 'CMS_Gallery_lang');
 
     }
 
@@ -29,26 +29,26 @@ class CmsServiceProvider extends ServiceProvider
     public function register()
     {
         //kontrolery
-        $this->app->make('Redicon\CMS_Articles\App\Http\Controllers\Admin\ArticlesController');
-        $this->app->make('Redicon\CMS_Articles\App\Http\Controllers\Ajax\AjaxController');
+        // $this->app->make('Redicon\CMS_Gallery\App\Http\Controllers\Admin\ArticlesController');
+        // $this->app->make('Redicon\CMS_Gallery\App\Http\Controllers\Ajax\AjaxController');
 
         //widoki
-        $this->loadViewsFrom(__DIR__.'/views/admin/articles', 'admin_articles');
-        $this->loadViewsFrom(__DIR__.'/views/partials', 'cms_articles_partials');
-        $this->loadViewsFrom(__DIR__.'/views/menu', 'cms_articles_menu');
+        // $this->loadViewsFrom(__DIR__.'/views/admin/articles', 'admin_articles');
+        // $this->loadViewsFrom(__DIR__.'/views/partials', 'CMS_Gallery_partials');
+        // $this->loadViewsFrom(__DIR__.'/views/menu', 'CMS_Gallery_menu');
 
         //vendory
-        $this->publishes([
-            __DIR__.'/views/admin/articles' => resource_path('views/vendor/admin/articles'),
-            __DIR__.'/public/assets/output' => public_path('vendor/cms_articles/assets'),
-            __DIR__.'/public/assets/articles' => public_path('vendor/cms_articles/articles'),
-        ], 'cms_articles_vendors');
+        // $this->publishes([
+        //     __DIR__.'/views/admin/articles' => resource_path('views/vendor/admin/articles'),
+        //     __DIR__.'/public/assets/output' => public_path('vendor/CMS_Gallery/assets'),
+        //     __DIR__.'/public/assets/articles' => public_path('vendor/CMS_Gallery/articles'),
+        // ], 'CMS_Gallery_vendors');
  
         //pliki artykułu - zdjęcie główne
-        $this->app->config['filesystem.disks.articles'] = array(
-            'driver' => 'local',
-            'root' => storage_path('articles')
-        );
+        // $this->app->config['filesystem.disks.articles'] = array(
+        //     'driver' => 'local',
+        //     'root' => storage_path('articles')
+        // );
 
     }
 }

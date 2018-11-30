@@ -1,9 +1,7 @@
 {
     "files": [
         "src/public/assets/src/ts/.d.ts",
-        "src/public/assets/src/ts/helpers.ts",
-        "src/public/assets/src/ts/slug.ts",
-        "src/public/assets/src/ts/frontend.ts",
+        "src/public/assets/src/ts/init.ts"
     ],
     "compilerOptions": {
         "noImplicitAny": true,

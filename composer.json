@@ -1,7 +1,7 @@
 {
-    "name": "redicon/cms_articles",
+    "name": "redicon/cms_gallery",
     "license": "MIT",
-    "description": "CMS Zarządzanie podstronami",
+    "description": "CMS Zarządzanie Galeriami",
     "homepage": "https://redicon.pl",
     "type": "library",
     "authors": [{
@@ -14,7 +14,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "Redicon\\CMS_Articles\\": "src/"
+            "Redicon\\CMS_Gallery\\": "src/"
         },
         "files": [
             "src/app/helpers.php"
@@ -22,7 +22,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Redicon\\CMS_Articles\\": "src/"
+            "Redicon\\CMS_Gallery\\": "src/"
         },
         "files": [
             "src/app/helpers.php"
@@ -30,11 +30,11 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.3.1-dev"
+            "dev-master": "1.0.1-dev"
         },
         "laravel": {
             "providers": [
-                "Redicon\\CMS_Articles\\CmsServiceProvider"
+                "Redicon\\CMS_Gallery\\CmsServiceProvider"
             ]
         }
     }

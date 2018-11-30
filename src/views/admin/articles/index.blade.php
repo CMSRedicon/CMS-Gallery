@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@include('cms_articles_partials::head')
-@include('cms_articles_partials::javascripts')
+@include('CMS_Gallery_partials::head')
+@include('CMS_Gallery_partials::javascripts')
 @section('content')
-    <h3 class="page-title">@lang('cms_articles_lang::articles.articles_title')</h3>
+    <h3 class="page-title">@lang('CMS_Gallery_lang::articles.articles_title')</h3>
     <p>
         <a href="{{ route('admin.articles.create') }}" class="btn btn-success">Dodaj</a>
     </p>
@@ -38,7 +38,7 @@
                                 <td>
                                 {!! Form::text('order['.$article->id.']', old('order.' . $article->id) ? old('order.' . $article->id) : $article->order, []) !!}
                                 </td>
-                                <td>@include('cms_articles_partials::is_public_radio', ['article_id' => $article->id, 'checked' => $article->is_public])</td>
+                                <td>@include('CMS_Gallery_partials::is_public_radio', ['article_id' => $article->id, 'checked' => $article->is_public])</td>
                                 <td>        
                                     <a href="{{route('admin.articles.edit', [$article->id])}}">Edytuj</a>
                                     <a href="{{route('admin.articles.delete', [$article->id])}}">Usuń</a>

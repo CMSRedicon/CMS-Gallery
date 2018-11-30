@@ -1,5 +1,5 @@
 <?php
-namespace Redicon\CMS_Articles\Database\Seeds;
+namespace Redicon\CMS_Gallery\Database\Seeds;
 use Illuminate\Database\Seeder;
 
 class ArticlesLogsSeed extends Seeder

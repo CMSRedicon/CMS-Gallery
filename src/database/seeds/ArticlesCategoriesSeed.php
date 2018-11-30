@@ -1,7 +1,7 @@
 <?php
-namespace Redicon\CMS_Articles\Database\Seeds;
+namespace Redicon\CMS_Gallery\Database\Seeds;
 use Illuminate\Database\Seeder;
-use Redicon\CMS_Articles\App\Models\ArticlesCategories;
+use Redicon\CMS_Gallery\App\Models\ArticlesCategories;
 
 class ArticlesCategoriesSeed extends Seeder
 {

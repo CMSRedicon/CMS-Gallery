@@ -1,7 +1,7 @@
 <?php
-namespace Redicon\CMS_Articles\Database\Seeds;
+namespace Redicon\CMS_Gallery\Database\Seeds;
 use Illuminate\Database\Seeder;
-use Redicon\CMS_Articles\App\Models\ArticlesDescription;
+use Redicon\CMS_Gallery\App\Models\ArticlesDescription;
 
 class ArticlesDescriptionSeed extends Seeder
 {
@@ -20,7 +20,7 @@ class ArticlesDescriptionSeed extends Seeder
            'lead' => 'Nagłówek',
            'description'=> 'Jakiś opis',
            'link' => 'articles/1',
-           'img_src' => 'vendor/cms_articles/articles/images/test.png'
+           'img_src' => 'vendor/CMS_Gallery/articles/images/test.png'
        ]);
     }
 }

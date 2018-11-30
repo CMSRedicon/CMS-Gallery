@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@include('cms_articles_partials::head')
-@include('cms_articles_partials::javascripts')
+@include('CMS_Gallery_partials::head')
+@include('CMS_Gallery_partials::javascripts')
 @section('content')
     <h3 class="page-title">Dodaj nowy wpis</h3>
 
