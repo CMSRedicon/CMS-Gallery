@@ -29,7 +29,7 @@ class CmsServiceProvider extends ServiceProvider
     public function register()
     {
         //kontrolery
-        // $this->app->make('Redicon\CMS_Gallery\App\Http\Controllers\Admin\ArticlesController');
+        $this->app->make('Redicon\CMS_Gallery\App\Http\Controllers\Admin\GalleriesController');
         // $this->app->make('Redicon\CMS_Gallery\App\Http\Controllers\Ajax\AjaxController');
 
         //widoki

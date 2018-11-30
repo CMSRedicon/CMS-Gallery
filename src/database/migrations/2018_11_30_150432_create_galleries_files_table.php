@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGalleriesDescriptionTable extends Migration
+class CreateGalleriesFilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateGalleriesDescriptionTable extends Migration
      */
     public function up()
     {
-        Schema::create('galleries_description', function (Blueprint $table) {
+        Schema::create('galleries_files', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('gallery_id');
             $table->foreign('gallery_id')->references('id')->on('galleries')->onDelete('cascade');
-            $table->string('lang',3);
-            $table->string('name',1000);
-            $table->longText('description')->nullable();
+            $table->string('url',1000);
+            $table->string('description',1000)->nullable();
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateGalleriesDescriptionTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('galleries_description');
+        Schema::dropIfExists('galleries_collection');
     }
 }
