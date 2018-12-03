@@ -1,0 +1,41 @@
+{
+    "name": "redicon/cms_gallery",
+    "license": "MIT",
+    "description": "CMS Zarządzanie Galeriami",
+    "homepage": "https://redicon.pl",
+    "type": "library",
+    "authors": [{
+        "name": "Tomasz Cwik",
+        "email": "tomek@redicon.pl"
+    }],
+    "require": {
+        "php": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Redicon\\CMS_Gallery\\": "src/"
+        },
+        "files": [
+            "src/app/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Redicon\\CMS_Gallery\\": "src/"
+        },
+        "files": [
+            "src/app/helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.1-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Redicon\\CMS_Gallery\\CmsServiceProvider"
+            ]
+        }
+    }
+}
