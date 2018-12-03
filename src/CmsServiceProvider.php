@@ -16,8 +16,10 @@ class CmsServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/routes/web.php');
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
-        //tłumaczenia
-        $this->loadTranslationsFrom(__DIR__.'/lang', 'CMS_Gallery_lang');
+        //config
+        $this->publishes([
+            __DIR__.'/config/cms_gallery.php' => config_path('cms_gallery.php'),
+        ]);
 
     }
 
